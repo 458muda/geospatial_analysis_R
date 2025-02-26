@@ -1,0 +1,85 @@
+set.seed(10)
+a <- sample(1:20, size = 10)
+
+aa <- sample(1:20, size = 10, replace = TRUE)
+
+set.seed(10)
+a <- sample(1:20, size = sample(1:10000, 1), replace = TRUE)
+names(a) <- paste0("V", 1:length(a))
+names(a)
+a
+
+set.seed(10)
+V1 <- 1:10
+V2 <- sample(1:100, size = 10)
+V3 <- runif(n = 10, min = 0, max = 50)
+V4 <- sample(LETTERS[1:5], size = 10, replace = TRUE)
+dat <- data.frame(V1, V2, V3, V4)
+dat
+
+V3
+
+runif?
+
+m <- cbind(V1,V2,V3)
+
+str(dat)
+
+dat$V3^2
+
+dat[["V3"]]^2
+
+datss <- dat[1:2, 1:2]
+
+datss
+
+dat3 <- dat[1:2, c("V2", "V4")]
+
+dat3
+
+rownames(dat) <- paste0("R", 1:10)
+
+dat
+dat4 <- dat[c("R1", "R3"), c("V2", "V4")]
+
+dat4
+
+dat[1:2,1:2] <- -1:-4
+
+dat
+
+dat[1:2,1:2] <- datss
+
+datss <- dat
+
+datss
+
+set.seed(10)
+V3 <- runif(n = 10, min = 0, max = 50)
+
+m <- cbind(V1,V2,V3)
+
+m
+str(m)
+class(m)
+
+
+V4 <- sample(LETTERS[1:5], size = 10, replace = TRUE)
+
+
+data <- data.frame(V1, V2, V3, V4)
+
+str(data)
+class(data)
+
+
+m2 = cbind(V1, V2, V3, V4)
+
+str(m2)
+class(m2)
+
+
+
+
+
+library(GEOG346coursework)
